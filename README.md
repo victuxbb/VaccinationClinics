@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/victuxbb/VaccinationClinics.svg?branch=master)](https://travis-ci.org/victuxbb/VaccinationClinics)
 # Vaccination Clinics
 
  The World Health Organization (WHO) wants to establish a total of B vaccination clinics across N cities to immunization people agains fatal diseases.
@@ -32,7 +33,7 @@
 
 * Initialize binary search tree with all the cities with 1 clinic assigned.
 * Loop over clinics while are greater than 0
-* Find in logaritmic time the city with max ratio (population/clinics) and assign a clinic.
+* Find in constant time the city with max ratio (population/clinics) and assign a clinic.
 * When all clinics are assigned return the city with max ratio.
 
 ```java
@@ -79,7 +80,7 @@ private static class City implements Comparable<City> {
 
 
 ```
-O(N + B log N)
+O(N log N + B log N)
 ```
 
 ## Tests running
